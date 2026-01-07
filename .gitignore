@@ -1,0 +1,5 @@
+.qwen/
+dist/
+node_modules/
+.DS_Store
+QWEN.md

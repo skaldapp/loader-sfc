@@ -1,0 +1,5 @@
+{
+  "$schema": "https://www.schemastore.org/tsconfig",
+  "extends": ["@vuebro/configs/tsconfig"],
+  "include": ["src/**/*.ts", "src/**/*.vue"]
+}
