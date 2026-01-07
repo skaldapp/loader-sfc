@@ -1,4 +1,4 @@
-import config from "@vuebro/configs/vite";
+import config from "@skaldapp/configs/vite";
 import { defineConfig, mergeConfig } from "vite";
 
 export default mergeConfig(

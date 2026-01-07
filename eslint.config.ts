@@ -1,4 +1,4 @@
-import shared from "@vuebro/configs/eslint";
+import shared from "@skaldapp/configs/eslint";
 import { defineConfig } from "eslint/config";
 
 export default defineConfig(shared, {

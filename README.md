@@ -12,22 +12,22 @@ Vue3 Single File Component (SFC) loader. Load .vue files directly from your brow
 
 ## Installation
 
-Install `@vuebro/loader-sfc` with npm:
+Install `@skaldapp/loader-sfc` with npm:
 
 ```bash
-npm install @vuebro/loader-sfc
+npm install @skaldapp/loader-sfc
 ```
 
 Or with yarn:
 
 ```bash
-yarn add @vuebro/loader-sfc
+yarn add @skaldapp/loader-sfc
 ```
 
 Or with pnpm:
 
 ```bash
-pnpm add @vuebro/loader-sfc
+pnpm add @skaldapp/loader-sfc
 ```
 
 ## Usage
@@ -39,7 +39,7 @@ To load .vue files dynamically at runtime just use the `loadModule` function:
 ```vue
 <script setup>
 import { defineAsyncComponent } from "vue";
-import loadModule from "@vuebro/loader-sfc";
+import loadModule from "@skaldapp/loader-sfc";
 
 const AdminPage = defineAsyncComponent(async () =>
   loadModule(await (await fetch("./components/AdminPageComponent.vue")).text()),
@@ -57,7 +57,7 @@ You can pass configuration options to customize the compilation process:
 
 ```javascript
 import { defineAsyncComponent } from "vue";
-import loadModule from "@vuebro/loader-sfc";
+import loadModule from "@skaldapp/loader-sfc";
 
 const MyComponent = defineAsyncComponent(async () =>
   loadModule(await (await fetch("./components/MyComponent.vue")).text(), {
@@ -126,7 +126,7 @@ npm run lint
 
 ## Examples
 
-A simple example of using `@vuebro/loader-sfc` in a template Vue 3 + TypeScript + Vite application for dynamic loading and compilation of an SFC module during application runtime in the browser can be found in the repository: [loader-sfc-example](https://github.com/vuebro/loader-sfc-example)
+A simple example of using `@skaldapp/loader-sfc` in a template Vue 3 + TypeScript + Vite application for dynamic loading and compilation of an SFC module during application runtime in the browser can be found in the repository: [loader-sfc-example](https://github.com/skaldapp/loader-sfc-example)
 
 ## License
 

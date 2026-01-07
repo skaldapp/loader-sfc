@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.schemastore.org/package",
-  "name": "@vuebro/loader-sfc",
+  "name": "@skaldapp/loader-sfc",
   "version": "2.4.9",
   "description": "A lightweight library that enables loading Vue 3 Single File Components (.vue files) directly in the browser at runtime without requiring a build step. Supports TypeScript and JSX transformations for dynamic component loading.",
   "keywords": [
@@ -13,13 +13,13 @@
     "dynamic",
     "components"
   ],
-  "homepage": "https://github.com/vuebro/loader-sfc#readme",
+  "homepage": "https://github.com/skaldapp/loader-sfc#readme",
   "bugs": {
-    "url": "https://github.com/vuebro/loader-sfc/issues"
+    "url": "https://github.com/skaldapp/loader-sfc/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuebro/loader-sfc.git"
+    "url": "git+https://github.com/skaldapp/loader-sfc.git"
   },
   "license": "AGPL-3.0-only",
   "author": "Jerry Bruwes <jbruwes@gmail.com> (https://jbruwes.github.io)",
@@ -33,18 +33,18 @@
     "build": "tsc && vite build",
     "lint": "eslint ."
   },
-  "prettier": "@vuebro/configs/prettierrc",
+  "prettier": "@skaldapp/configs/prettierrc",
   "dependencies": {
     "@vue/compiler-sfc": "^3.5.26",
     "hash-sum": "^2.0.0",
     "sucrase": "^3.35.1"
   },
   "devDependencies": {
+    "@skaldapp/configs": "^1.2.41",
     "@types/hash-sum": "^1.0.2",
     "@types/node": "^25.0.3",
-    "@vuebro/configs": "^1.2.35",
     "eslint": "^9.39.2",
     "terser": "^5.44.1",
-    "vite": "^7.3.0"
+    "vite": "^7.3.1"
   }
 }

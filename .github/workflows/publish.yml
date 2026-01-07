@@ -15,7 +15,9 @@ jobs:
         with:
           node-version: lts/*
           registry-url: "https://registry.npmjs.org"
-          scope: "@vuebro"
+          scope: "@skaldapp"
       - run: npm ci
       - run: npm run build
-      - run: npm publish
+      - run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

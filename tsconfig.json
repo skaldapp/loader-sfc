@@ -1,5 +1,5 @@
 {
   "$schema": "https://www.schemastore.org/tsconfig",
-  "extends": ["@vuebro/configs/tsconfig"],
+  "extends": ["@skaldapp/configs/tsconfig"],
   "include": ["src/**/*.ts", "src/**/*.vue"]
 }
