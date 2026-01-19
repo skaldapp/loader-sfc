@@ -35,12 +35,12 @@
   },
   "prettier": "@skaldapp/configs/prettierrc",
   "dependencies": {
-    "@vue/compiler-sfc": "^3.5.26",
+    "@vue/compiler-sfc": "^3.5.27",
     "hash-sum": "^2.0.0",
     "sucrase": "^3.35.1"
   },
   "devDependencies": {
-    "@skaldapp/configs": "^1.2.45",
+    "@skaldapp/configs": "^1.2.46",
     "@types/hash-sum": "^1.0.2",
     "@types/node": "^25.0.9",
     "eslint": "^9.39.2",
