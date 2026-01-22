@@ -40,7 +40,7 @@
     "sucrase": "^3.35.1"
   },
   "devDependencies": {
-    "@skaldapp/configs": "^1.2.47",
+    "@skaldapp/configs": "^1.2.48",
     "@types/hash-sum": "^1.0.2",
     "@types/node": "^25.0.10",
     "eslint": "^9.39.2",
