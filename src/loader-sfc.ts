@@ -18,25 +18,15 @@ import hash_sum from "hash-sum";
 import { transform } from "sucrase";
 
 const fetching = async (input: string) => {
-    try {
-      const response = await fetch(input);
-      if (response.ok) return await response.text();
-      else throw new Error(response.statusText);
-    } catch (error) {
-      console.error(error);
-    }
-    return;
-  },
-  inject = async (code: string) => {
-    const objectURL = URL.createObjectURL(
-      new Blob([code], { type: "application/javascript" }),
-    );
-    try {
-      return (await import(objectURL)) as Record<string, object>;
-    } finally {
-      URL.revokeObjectURL(objectURL);
-    }
-  };
+  try {
+    const response = await fetch(input);
+    if (response.ok) return await response.text();
+    else throw new Error(response.statusText);
+  } catch (error) {
+    console.error(error);
+  }
+  return undefined;
+};
 
 export default async (
   sfc: string,
@@ -161,14 +151,22 @@ export default async (
   );
   [...(templateTips ?? [])].forEach(console.info);
 
-  const [styleResult, scriptResult, templateResult] = await Promise.all([
+  const inject = async (code: string) => {
+      const objectURL = URL.createObjectURL(
+        new Blob([langs.size ? transform(code, sucraseOptions).code : code], {
+          type: "application/javascript",
+        }),
+      );
+      try {
+        return (await import(objectURL)) as Record<string, object>;
+      } finally {
+        URL.revokeObjectURL(objectURL);
+      }
+    },
+    [styleResult, scriptResult, templateResult] = await Promise.all([
       style,
-      content
-        ? inject(langs.size ? transform(content, sucraseOptions).code : content)
-        : Promise.resolve(undefined),
-      code
-        ? inject(langs.size ? transform(code, sucraseOptions).code : code)
-        : Promise.resolve(undefined),
+      content ? inject(content) : Promise.resolve(undefined),
+      code ? inject(code) : Promise.resolve(undefined),
     ]),
     textContent = styleResult.join("\n").trim();
 

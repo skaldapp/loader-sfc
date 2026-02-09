@@ -1,11 +1,10 @@
 import shared from "@skaldapp/configs/eslint";
 import { defineConfig } from "eslint/config";
 
-export default defineConfig(shared, {
-  languageOptions: {
-    parserOptions: {
-      projectService: { allowDefaultProject: ["*.config.ts"] },
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+const allowDefaultProject = ["*.config.ts"],
+  projectService = { allowDefaultProject },
+  tsconfigRootDir = import.meta.dirname,
+  parserOptions = { projectService, tsconfigRootDir },
+  languageOptions = { parserOptions };
+
+export default defineConfig(shared, { languageOptions });
