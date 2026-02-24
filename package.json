@@ -23,7 +23,11 @@
   },
   "license": "AGPL-3.0-only",
   "author": "Jerry Bruwes <jbruwes@gmail.com> (https://jbruwes.github.io)",
+  "sideEffects": false,
   "type": "module",
+  "exports": {
+    ".": "./dist/loader-sfc.js"
+  },
   "main": "./dist/loader-sfc.js",
   "types": "./dist/loader-sfc.d.ts",
   "files": [
@@ -35,16 +39,19 @@
   },
   "prettier": "@skaldapp/configs/prettierrc",
   "dependencies": {
-    "@vue/compiler-sfc": "^3.5.28",
+    "@vue/compiler-sfc": "^3.5.29",
     "hash-sum": "^2.0.0",
     "sucrase": "^3.35.1"
   },
   "devDependencies": {
-    "@skaldapp/configs": "^1.2.59",
+    "@skaldapp/configs": "^1.2.63",
     "@types/hash-sum": "^1.0.2",
-    "@types/node": "^25.2.3",
-    "eslint": "^9.39.2",
+    "@types/node": "^25.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.56.1",
+    "eslint": "^9.39.3",
     "terser": "^5.46.0",
+    "typescript-eslint": "^8.56.1",
     "vite": "^7.3.1"
   }
 }

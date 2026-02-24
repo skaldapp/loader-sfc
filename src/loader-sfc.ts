@@ -63,10 +63,10 @@ export default async (
       [script, scriptSetup]
         .filter((scriptBlock) => scriptBlock !== null)
         .flatMap(
-          ({ lang = "js" }) =>
+          ({ lang }) =>
             [
-              ...(/[jt]sx$/.test(lang) ? ["jsx"] : []),
-              ...(/tsx?$/.test(lang) ? ["typescript"] : []),
+              ...(/[jt]sx$/.test(lang ?? "js") ? ["jsx"] : []),
+              ...(/tsx?$/.test(lang ?? "js") ? ["typescript"] : []),
             ] as ParserPlugin[],
         ),
     ),
