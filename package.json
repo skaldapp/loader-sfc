@@ -44,12 +44,12 @@
     "sucrase": "^3.35.1"
   },
   "devDependencies": {
-    "@skaldapp/configs": "^1.2.68",
+    "@skaldapp/configs": "^1.2.69",
     "@types/hash-sum": "^1.0.2",
     "@types/node": "^25.4.0",
     "@typescript-eslint/eslint-plugin": "^8.57.0",
     "@typescript-eslint/parser": "^8.57.0",
-    "eslint": "^9.39.4",
+    "eslint": "^10.0.3",
     "terser": "^5.46.0",
     "typescript-eslint": "^8.57.0",
     "vite": "^7.3.1"
