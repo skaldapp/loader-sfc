@@ -6,7 +6,7 @@ const emptyOutDir = false,
   external = ["vue"],
   fileName = "loader-sfc.esm-browser.prod",
   minify = "terser",
-  rollupOptions = { external };
+  rolldownOptions = { external };
 
 export default mergeConfig(
   config,
@@ -15,7 +15,7 @@ export default mergeConfig(
       emptyOutDir,
       lib: { entry, fileName, formats: ["es"] },
       minify,
-      rollupOptions,
+      rolldownOptions,
     },
   }),
 );
