@@ -1,20 +1,8 @@
 {
   "recommendations": [
-    "aaron-bond.better-comments",
-    "arcticicestudio.nord-visual-studio-code",
-    "bradlc.vscode-tailwindcss",
     "dbaeumer.vscode-eslint",
-    "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
-    "github.vscode-github-actions",
-    "l13rary.l13-projects",
-    "pflannery.vscode-versionlens",
-    "pkief.material-icon-theme",
-    "pnp.polacode",
-    "stackbreak.comment-divider",
     "streetsidesoftware.code-spell-checker",
-    "streetsidesoftware.code-spell-checker-russian",
-    "vue.volar",
-    "yoavbls.pretty-ts-errors"
+    "vue.volar"
   ]
 }
