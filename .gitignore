@@ -1,3 +1,4 @@
-dist/
-node_modules/
+dist
+node_modules
+.github/context-mode
 .DS_Store
