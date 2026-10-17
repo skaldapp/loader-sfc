@@ -39,19 +39,19 @@
   },
   "prettier": "@skaldapp/configs/prettierrc",
   "dependencies": {
-    "@vue/compiler-sfc": "^3.5.43",
+    "@vue/compiler-sfc": "^3.5.44",
     "hash-sum": "^2.0.0",
     "sucrase": "^3.35.1"
   },
   "devDependencies": {
-    "@skaldapp/configs": "^1.7.6",
+    "@skaldapp/configs": "^1.7.7",
     "@types/hash-sum": "^1.0.2",
     "@types/node": "^26.6.5",
-    "@typescript-eslint/eslint-plugin": "^8.71.1",
-    "@typescript-eslint/parser": "^8.71.1",
-    "eslint": "^10.12.0",
+    "@typescript-eslint/eslint-plugin": "^8.71.2",
+    "@typescript-eslint/parser": "^8.71.2",
+    "eslint": "^10.13.0",
     "terser": "^5.51.2",
-    "typescript-eslint": "^8.71.1",
+    "typescript-eslint": "^8.71.2",
     "vite": "^8.3.4"
   }
 }
